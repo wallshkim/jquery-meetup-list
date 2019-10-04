@@ -1,8 +1,11 @@
 $(document).ready(readyNow);
 
+let totalMeetups = 3;
+
 function readyNow() {
     console.log('jquery working!');
     $('#addMeetupButton').on('click', handleClick);
+    $('#tableBody').on('click', '#deleteButton', handleDelete)
 }
 
 function handleClick(){
@@ -18,5 +21,14 @@ function handleClick(){
         <td>${meetupDateInput}</td>
         <td>${deleteButton}</td>
     </tr>`);
+    // increase totalMeetups by 1
+    totalMeetups ++;
+    // add count of total meetups to total meetups h2
+    $('#totalMeetupsOutput').text(totalMeetups);
+}
 
+
+function handleDelete(){
+    let newTableRow = $(this).closest('tr');
+    $(newTableRow).remove();
 }
