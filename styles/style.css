@@ -1,0 +1,12 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#inputAndButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px;
+}
