@@ -29,6 +29,7 @@ function handleClick(){
 
 
 function handleDelete(){
+    console.log('in handleDelete');
     let newTableRow = $(this).closest('tr');
     $(newTableRow).remove();
 }
