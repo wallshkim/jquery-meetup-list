@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>jQuery Meetup List</title>
+</head>
+
+<body>
+    <h1>jQuery Meetup List</h1>
+
+    <div id="inputAndButtonContainer">
+        <h4>New Group: </h4>
+        <input type="text" name="New Group" placeholder="Name" id="newGroupInput" />
+
+        <h4>Next Meetup Date:</h4>
+        <input type="text" name="Next Meetup Date" placeholder="Date" id="meetupDateInput" />
+
+        <button id="addMeetupButton" type="button">Add Meetup</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Group</th>
+                <th>Next Meetup</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td>JS MN</td>
+                <td>10/18/2019</td>
+                <td><button id="deleteButton" type="button">Delete</button></td>
+            </tr>
+            <tr>
+                <td>React Mpls</td>
+                <td>10/22/2019</td>
+                <td><button id="deleteButton" type="button">Delete</button></td>
+            </tr>
+            <tr>
+                <td>AWS_MN</td>
+                <td>10/09/2019</td>
+                <td><button id="deleteButton" type="button">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Total Meetups: <span id="totalMeetupsOutput">3</span></h2>
+
+</body>
+
+</html>

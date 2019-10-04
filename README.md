@@ -1,1 +1,36 @@
 # jquery-meetup-list
+
+- create `index.html`
+- create `client.js`
+- create `jquery.js`
+- add console logs to test javascript
+    - console log for javascript loaded
+    - console log for jquery loaded in an `onReady` function
+- add inputs to html
+    - New Group
+    - Next Meetup Date
+- add `Add Meetup` button to html
+- create table
+    - Create table headings
+        - Group
+        - Next Meetup
+        - Delete
+    - Hard code a few group rows
+        - value for group
+        - value for date
+        - delete button
+- Add hard-coded number of meetups
+- create variable to store total meetups starting at hard-coded example
+- check that `Add Meetup` button can be clicked
+    - add button event listener
+    - console log 'I have been clicked'
+    - console log `group` input value
+    - console log  `date` input value
+    - add new meetup to table
+        - append hard-coded row to table via jQuery
+        - add group to row
+        - add date to row
+        - add delete button
+- add event listener for delete button
+    - console.log `delete has been clicked`
+    - delete row using jQuery
